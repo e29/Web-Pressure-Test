@@ -25,4 +25,6 @@ WPT(Web Press Test)是一个在Linux下使用的非常简单的网站压测工�
 |         |--trace                |Use TRACE request method.                      |
 |-?/-h    |--help                 |This information.                              |
 |-V       |--version              |Display program version.                       |
-  
+
+##更多信息：
+参见博客: http://e29.github.io/
