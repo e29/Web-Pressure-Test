@@ -133,7 +133,7 @@ int main(int argc, char* argv[]){
 	           fprintf(stderr,"Error in option --proxy %s: Missing port number.\n",optarg);
 		   return 2;	
 		}
-                *tmp = '\0';                // Q1
+                *tmp = '\0';                
                 proxyport = atoi(tmp+1);break;
            case ':' :
 	   case 'h' :
