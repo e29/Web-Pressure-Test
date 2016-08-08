@@ -13,7 +13,7 @@ Web Pressure Test(WPT)是一个在Linux下使用的非常简单的网站压测�
 |:--------|:--------------------- |:----------------------------------------------|
 |-f       |--force                |Don't wait for reply from server.              |
 |-r       |--reload               |Send reload request - Pragma: no-cache.        |
-|-t       |--time <sec>           |Run benchmark for <sec> seconds. Default 30.   |
+|-t       |--time <sec>           |Run WPT for <sec> seconds. Default 30.   |
 |-p       |--proxy <server:port>  |Use proxy server for request.                  |
 |-c       |--clients <n>          |Run <n> HTTP clients at once. Default one.     |
 |-9       |--http09               |Use HTTP/0.9 style requests.                   |

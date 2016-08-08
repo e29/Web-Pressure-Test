@@ -4,17 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-METHOD_GET	wpt.c	27;"	d	file:
-METHOD_HEAD	wpt.c	28;"	d	file:
-METHOD_OPTIONS	wpt.c	29;"	d	file:
-METHOD_TRACE	wpt.c	30;"	d	file:
-PROGRAM_VERSION	wpt.c	31;"	d	file:
-REQUEST_SIZE	wpt.c	32;"	d	file:
-Socket	socket.c	/^int Socket(const char *host,int clientPort){$/;"	f
+METHOD_GET	wpt.c	23;"	d	file:
+METHOD_HEAD	wpt.c	24;"	d	file:
+METHOD_OPTIONS	wpt.c	25;"	d	file:
+METHOD_TRACE	wpt.c	26;"	d	file:
+PROGRAM_VERSION	wpt.c	27;"	d	file:
+REQUEST_SIZE	wpt.c	28;"	d	file:
+Socket	socket.c	/^int Socket(const char *host, int clientPort){$/;"	f
 alarm_handler	wpt.c	/^static void alarm_handler(int signal){$/;"	f	file:
-bench	wpt.c	/^static int bench(void){$/;"	f	file:
-benchcore	wpt.c	/^void benchcore(const char *host,const int port,const char *req){$/;"	f
-benchtime	wpt.c	/^int benchtime = 30;$/;"	v
 build_request	wpt.c	/^void build_request(const char *url){$/;"	f
 bytes	wpt.c	/^int bytes = 0;$/;"	v
 clients	wpt.c	/^int clients = 1;$/;"	v
@@ -33,3 +30,6 @@ request	wpt.c	/^char request[REQUEST_SIZE];$/;"	v
 speed	wpt.c	/^int speed = 0;$/;"	v
 timerexpired	wpt.c	/^volatile int timerexpired = 0;$/;"	v
 usage	wpt.c	/^static void usage(void){$/;"	f	file:
+wpt	wpt.c	/^static int wpt(void){$/;"	f	file:
+wptcore	wpt.c	/^void wptcore(const char *host, const int port, const char *req){$/;"	f
+wpttime	wpt.c	/^int wpttime = 30;$/;"	v

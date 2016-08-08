@@ -1,3 +1,9 @@
+/***************************************************************************/
+/* Function declaration: int Socket(const char* host, int clientPort)
+ * Socket warp ---
+ *               create a socket with IP(or hostname) and port number.*/                                                              
+/***************************************************************************/
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <fcntl.h>
@@ -11,7 +17,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int Socket(const char *host,int clientPort){
+int Socket(const char *host, int clientPort){
 	int sock;
 	unsigned long inaddr;
 	struct sockaddr_in ad;
@@ -19,7 +25,8 @@ int Socket(const char *host,int clientPort){
 	memset(&ad,0,sizeof(ad));
 	ad.sin_family = AF_INET;
 	
-	inaddr = inet_addr(host);
+	inaddr = inet_addr(host);             // inet_addr has been discarded and has some vulnerabilities. 
+                                              // Using inet_aton or inet_pton instead.
 	if (inaddr != INADDR_NONE)
 	   memcpy(&ad.sin_addr,&inaddr,sizeof(inaddr));
 	else {
